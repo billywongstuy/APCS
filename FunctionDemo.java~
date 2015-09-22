@@ -1,0 +1,12 @@
+public class FunctionDemo {
+    /*use void if no values to be returned*/
+    /* foo is name of function*/
+    public static void foo (int a, String s) {//a and s are parameters
+	System.out.println(a+s);
+    }
+    /*
+    public static void main (String[]args) {
+	System.out.println("Hey...");
+	foo(10,"OOPS"); //10 and OOPS are arguments
+	}*/
+}

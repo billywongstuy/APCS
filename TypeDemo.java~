@@ -1,0 +1,19 @@
+public class TypeDemo {
+    public static void main(String[]args) {
+	int a = 1;
+	double x = 3.1342;
+	charac c = '4';
+	String s = "oops";
+	boolean isOK = true;
+	System.out.print((a+a).getClass().getName());
+	System.out.println(a+a);
+	System.out.println(x+a);
+	System.out.println(x+x);
+	System.out.println(s+c+a);
+	System.out.println(s+a+c);
+	/*Characters get converted to doubles (char + int) - it's broader*/
+	System.out.println(a+c+s);
+	/*(1 + ASCII for A) becomes integer + oops --= becomes string */
+	System.out.println(a+'A'+s);
+    }
+}
