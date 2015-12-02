@@ -1,0 +1,9 @@
+public static thing(String a, String b) {
+    String combine = "";
+    longer = 
+    shorterlength
+	for (... i < shorterlength
+                add string[i] to combine
+		 }
+		 combine += longer.substring(shorterlength)
+}

@@ -1,0 +1,32 @@
+public class MakePigLatin {
+
+    public boolean isVowel(String s) {
+	if (s.equalsIgnoreCase("a") || s.equalsIgnoreCase("e") || s.equalsIgnoreCase("i") || s.equalsIgnoreCase("o") || s.equalsIgnoreCase("u")) {
+	    return true;
+	} 
+	return false;
+    }
+
+    public String pigLatin(String s) {
+	String toMove = "";
+	String beginning;
+	boolean vowelFound = false;
+	for (int i = 0; i < s.length; i++) {
+	    if (!vowelFound && isVowel(s.substring(i,i+1))) {
+		vowelFound = true;
+	    } 
+	    else if (!vowelFound) {
+		toMove += s.substring(i,i+1);
+	    }
+	    else {
+		beginning = s.substring(i+1);
+		break;
+	    }
+	}
+	return beginning + toMove;
+    }
+
+    public static void main(String[]args) {
+	System.out.println(pigLatin("pig"));
+    }
+}
